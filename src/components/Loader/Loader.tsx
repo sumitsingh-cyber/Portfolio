@@ -39,7 +39,7 @@ export function Loader({ onLoaded }: LoaderProps) {
           />
           <circle
             className="progress-ring__circle"
-            stroke="var(--blue)"
+            stroke="var(--green)"
             strokeWidth="4"
             strokeLinecap="round"
             fill="transparent"

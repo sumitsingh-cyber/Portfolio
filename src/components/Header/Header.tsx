@@ -4,6 +4,8 @@ import { NavHashLink, HashLink } from 'react-router-hash-link'
 import { useState } from 'react'
 import logo from '../../assets/logo.png'
 import Resume from '../../assets/DivyanshuResume2.0.pdf'
+import { ColorSwitcher } from '../ColorSwitcher/ColorSwitcher'
+
 export function Header() {
   const [isActive, setActive] = useState(false)
   function toggleTheme() {
@@ -20,14 +22,18 @@ export function Header() {
           <img src={logo} alt="Logo" />
           <span>Divyanshu Tiwari | Portfolio</span>
         </HashLink>
-        <input
-          onChange={toggleTheme}
-          className="container_toggle"
-          type="checkbox"
-          id="switch"
-          name="mode"
-        />
-        <label htmlFor="switch">Toggle</label>
+
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <ColorSwitcher />
+          <input
+            onChange={toggleTheme}
+            className="container_toggle"
+            type="checkbox"
+            id="switch"
+            name="mode"
+          />
+          <label htmlFor="switch">Toggle</label>
+        </div>
         <nav className={isActive ? 'active' : ''}>
           <NavHashLink smooth to="#home" onClick={closeMenu}>
             Home

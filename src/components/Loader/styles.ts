@@ -45,7 +45,7 @@ export const Container = styled.div`
     object-fit: contain;
     mix-blend-mode: screen;
     border-radius: 50%;
-    filter: drop-shadow(0 0 20px rgba(1, 111, 185, 0.4)); /* Updated to blue shadow */
+    filter: drop-shadow(0 0 20px rgba(255, 77, 77, 0.4)); /* Updated to red shadow */
     animation: pulse 2s infinite ease-in-out;
   }
 
