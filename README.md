@@ -1,6 +1,6 @@
 # 🎨 Personal Portfolio
 
-A modern, responsive personal portfolio website built with React, TypeScript, and Styled Components. Showcase your projects, skills, and experience with an interactive and visually appealing interface.
+A modern, responsive personal portfolio website built with React, TypeScript, and Styled Components. Showcase your projects, skills, and experience with an interactive and visually appealing interface[...]
 
 **Live Demo:** [https://divyanshu-tiwari.vercel.app](https://divyanshu-tiwari.vercel.app)
 
@@ -39,13 +39,13 @@ A modern, responsive personal portfolio website built with React, TypeScript, an
 Before you begin, ensure you have the following installed:
 
 - **Node.js** (v14 or higher)
-- **npm** (v6 or higher) or **yarn** (v1.22 or higher)
+- **yarn** (v1.22 or higher)
 - **Git**
 
 Check your versions:
 ```bash
 node --version
-npm --version
+yarn --version
 git --version
 ```
 
@@ -62,12 +62,6 @@ cd Portfolio
 
 ### 2. Install Dependencies
 
-Using npm:
-```bash
-npm install
-```
-
-Or using yarn:
 ```bash
 yarn install
 ```
@@ -93,11 +87,6 @@ REACT_APP_RECAPTCHA_KEY=your_recaptcha_key_here
 Start the development server:
 
 ```bash
-npm start
-```
-
-Or with yarn:
-```bash
 yarn start
 ```
 
@@ -108,11 +97,6 @@ The application will open at `http://localhost:3000` and automatically reload wh
 Create an optimized production build:
 
 ```bash
-npm run build
-```
-
-Or with yarn:
-```bash
 yarn build
 ```
 
@@ -122,11 +106,6 @@ The build folder contains the optimized production-ready files.
 
 Run the test suite:
 
-```bash
-npm test
-```
-
-Or with yarn:
 ```bash
 yarn test
 ```
@@ -160,10 +139,9 @@ Portfolio/
 
 | Command | Description |
 |---------|-------------|
-| `npm start` | Run development server |
-| `npm run build` | Build for production |
-| `npm test` | Run test suite |
-| `npm run eject` | Eject from Create React App (irreversible) |
+| `yarn start` | Run development server |
+| `yarn build` | Build for production |
+| `yarn test` | Run test suite |
 
 ---
 
@@ -177,7 +155,7 @@ Portfolio/
 
 ```bash
 # Or use Vercel CLI
-npm install -g vercel
+yarn global add vercel
 vercel
 ```
 
@@ -228,12 +206,12 @@ The project includes testing setup with:
 
 Run tests in watch mode:
 ```bash
-npm test -- --watch
+yarn test --watch
 ```
 
 Generate coverage report:
 ```bash
-npm test -- --coverage
+yarn test --coverage
 ```
 
 ---
@@ -267,45 +245,6 @@ npm test -- --coverage
 
 ---
 
-## 🐛 Troubleshooting
-
-### Issue: Port 3000 already in use
-
-```bash
-# On macOS/Linux
-lsof -i :3000
-kill -9 <PID>
-
-# On Windows
-netstat -ano | findstr :3000
-taskkill /PID <PID> /F
-```
-
-### Issue: Dependencies not installing
-
-```bash
-# Clear npm cache
-npm cache clean --force
-
-# Delete node_modules and lock file
-rm -rf node_modules package-lock.json
-
-# Reinstall
-npm install
-```
-
-### Issue: Build fails
-
-```bash
-# Clear build cache
-rm -rf build/
-
-# Rebuild
-npm run build
-```
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! To contribute:
@@ -315,12 +254,6 @@ Contributions are welcome! To contribute:
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is open source and available under the MIT License. Feel free to use it for your own portfolio!
 
 ---
 
