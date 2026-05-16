@@ -1,11 +1,13 @@
 import { BrowserRouter } from "react-router-dom"
 import { Container } from "./styles"
-import ScrollAnimation from "react-animate-on-scroll"
+import ScrollAnimationImport from "react-animate-on-scroll"
 import Illustration from "../../assets/illustration.svg"
 import { NavHashLink } from "react-router-hash-link"
 import linkedin from '../../assets/linkedin.svg'
 import githubIcon from '../../assets/github.svg'
 import Hello from '../../assets/Hello.gif'
+
+const ScrollAnimation = ScrollAnimationImport as any
 export function Hero() {
   return (
     <Container id="home">

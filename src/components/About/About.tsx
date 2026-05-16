@@ -18,7 +18,8 @@ import mongodbIcon from "../../assets/mongodb-icon.svg";
 import mysqlIcon from "../../assets/mysql-icon.svg";
 import cpanelIcon from "../../assets/cpanel-icon.svg";
 import sassIcon from "../../assets/sass-icon.svg";
-import ScrollAnimation from "react-animate-on-scroll";
+import ScrollAnimationImport from "react-animate-on-scroll";
+const ScrollAnimation = ScrollAnimationImport as any;
 
 export function About() {
   return (
