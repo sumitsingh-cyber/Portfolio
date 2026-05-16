@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const Container = styled.section`
+export const Container: any = styled.section`
   margin-top: 15rem;
   
   h2{

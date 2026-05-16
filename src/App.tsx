@@ -8,12 +8,14 @@ import { Loader } from './components/Loader/Loader'
 
 import 'react-toastify/dist/ReactToastify.css'
 
+const GlobalStyleProxy = GlobalStyle as any
+
 function App() {
   const [isLoading, setIsLoading] = useState(true)
 
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyleProxy />
       {isLoading ? (
         <Loader onLoaded={() => setIsLoading(false)} />
       ) : (

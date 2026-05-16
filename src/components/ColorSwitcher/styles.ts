@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container: any = styled.div`
   display: flex;
   align-items: center;
   margin-right: 2rem;

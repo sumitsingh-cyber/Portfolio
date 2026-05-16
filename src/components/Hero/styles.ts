@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.section`
+export const Container: any = styled.section`
   padding-top: 15%;
   display: flex;
   justify-content: space-between;
