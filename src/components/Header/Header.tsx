@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import { NavHashLink, HashLink } from 'react-router-hash-link'
 import { useState } from 'react'
 import logo from '../../assets/logo.png'
-import Resume from '../../assets/DivyanshuResume2.0.pdf'
+import Resume from '../../assets/DivyanshuResumev2.pdf'
 import { ColorSwitcher } from '../ColorSwitcher/ColorSwitcher'
 
 export function Header() {
