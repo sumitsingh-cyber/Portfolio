@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Footer } from './components/Footer/Footer'
 import { Header } from './components/Header/Header'
 import { Main } from './components/Main/Main'
@@ -13,6 +13,13 @@ const GlobalStyleProxy = GlobalStyle as any
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    const savedColor = localStorage.getItem('themeColor')
+    if (savedColor) {
+      document.documentElement.style.setProperty('--green', savedColor)
+    }
+  }, [])
 
   return (
     <>
