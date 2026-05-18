@@ -112,7 +112,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 1.6rem;
     -webkit-font-smoothing: antialiased;
     background-color: var(--black);
-    color: #FFFF;
+    color: #FFF;
   }
 
   body, input, textarea, button{
@@ -128,7 +128,7 @@ export const GlobalStyle = createGlobalStyle`
     border: none;
     cursor: pointer;
     background-color: var(--green);
-    color: #FFFF;
+    color: #FFF;
     border-radius: 2rem;
     font-weight: 500;
     transition: filter 0.25s;
@@ -145,7 +145,7 @@ export const GlobalStyle = createGlobalStyle`
 
   .logo{
     font-size: 3rem;
-    color: #FFFF;
+    color: #FFF;
     // &::first-letter{
     //   color: var(--green);
     // }

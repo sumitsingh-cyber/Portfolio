@@ -14,13 +14,13 @@ export const Container: any = styled.header`
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 1000;
 
   .logo{
     display: flex;
     align-items: center;
-    color: #FFFF;
+    color: #FFF;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 700;
     font-size: 2.4rem;
@@ -30,14 +30,34 @@ export const Container: any = styled.header`
       border-radius: 50%;
       margin-right: 1rem;
     }
+    
+    span.portfolio-text {
+      @media (max-width: 960px) {
+        display: none;
+      }
+    }
+
+    span.last-name {
+      @media (max-width: 600px) {
+        display: none;
+      }
+    }
+
+    span:not(.portfolio-text):not(.last-name) {
+      @media (max-width: 400px) {
+        display: none;
+      }
+    }
   }
 
   nav{
     display: flex;
     align-items: center;
     gap: 1.8rem;
+    margin-left: auto;
+    margin-right: 2.5rem;
     a{
-      color: #FFFF;
+      color: #FFF;
       padding: 0.6rem;
       font-family: 'Red Hat Display', sans-serif;
       font-weight: 500;
@@ -63,7 +83,7 @@ export const Container: any = styled.header`
   .menu{
     width: 2rem;
     height: 0.2rem;
-    background: #FFFF;
+    background: #FFF;
     position: relative;
     cursor: pointer;
     display: none;
@@ -98,7 +118,7 @@ export const Container: any = styled.header`
     position: absolute;
     width: 100%;
     height: 0.2rem;
-    background: #FFFF;
+    background: #FFF;
     cursor: pointer;
     transition: .6s;
   }
@@ -169,6 +189,7 @@ export const Container: any = styled.header`
     }
 
     nav {
+      margin: 0;
       -ms-overflow-style: none;
       scrollbar-width: none;
       overflow: hidden;

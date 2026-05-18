@@ -60,9 +60,8 @@ export const Container: any = styled.section`
     display: block;
     margin-top: 15%;
     .hero-text{
-
       h1{
-        font-size: 5rem;
+        font-size: 5.5rem;
       }
     }
     
@@ -72,9 +71,30 @@ export const Container: any = styled.section`
   }
 
   @media(max-width: 600px){
-    margin-top: 35%;
+    margin-top: 25%;
+    .hero-text{
+      h1{
+        font-size: 4.5rem;
+      }
+      p.small-resume{
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+      }
+    }
+    .button{
+      margin-top: 3rem;
+    }
   }
+
   @media(max-width: 480px){
-    margin-top: 45%;
+    margin-top: 35%;
+    .hero-text{
+      h1{
+        font-size: 3.5rem;
+      }
+      p.small-resume{
+        font-size: 1.6rem;
+      }
+    }
   }
 `

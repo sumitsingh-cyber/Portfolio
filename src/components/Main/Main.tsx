@@ -28,7 +28,7 @@ export function Main() {
         options={{
           "fullScreen": {
             "enable": true,
-            "zIndex": 1
+            "zIndex": -1
           },
           "detectRetina": true,
           "fpsLimit": 60,
