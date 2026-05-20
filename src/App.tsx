@@ -3,7 +3,6 @@ import { Footer } from './components/Footer/Footer'
 import { Header } from './components/Header/Header'
 import { Main } from './components/Main/Main'
 import { GlobalStyle } from './styles/global'
-import { Analytics } from "@vercel/analytics/react"
 import { Loader } from './components/Loader/Loader'
 import { ColorSwitcher } from './components/ColorSwitcher/ColorSwitcher'
 
@@ -13,10 +12,6 @@ const GlobalStyleProxy = GlobalStyle as any
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
-  const shouldLoadAnalytics =
-    typeof window !== 'undefined' &&
-    window.location.hostname !== 'localhost' &&
-    window.location.hostname !== '127.0.0.1'
 
   useEffect(() => {
     const savedColor = localStorage.getItem('themeColor')
@@ -35,7 +30,6 @@ function App() {
           <Header />
           <Main />
           <ColorSwitcher />
-          {shouldLoadAnalytics && <Analytics />}
           <Footer />
         </>
       )}
