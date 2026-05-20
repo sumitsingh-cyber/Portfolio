@@ -46,11 +46,30 @@ export const Container: any = styled.div`
   }
 
   @media (max-width: 740px){
+    h2{
+      font-size: 2.4rem;
+    }
+
     form{
       width: 100%;
       
       input,textarea{
         width: 100%;
+        max-width: 100%;
+      }
+
+      button{
+        width: 100%;
+        max-width: 26rem;
+        padding: 1rem 2rem;
+      }
+    }
+  }
+
+  @media (max-width: 480px){
+    form{
+      textarea{
+        height: 16rem;
       }
     }
   }
@@ -68,5 +87,13 @@ export const ContainerSucces = styled.div`
     text-transform: uppercase;
     text-align: center;
     color: #fbfbfb;
+  }
+
+  @media (max-width: 480px){
+    margin-top: 6rem;
+
+    h3{
+      font-size: 2rem;
+    }
   }
 `

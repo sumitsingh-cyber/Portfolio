@@ -1,9 +1,7 @@
 import { Container } from './styles'
-import { BrowserRouter as Router } from 'react-router-dom'
-import { NavHashLink, HashLink } from 'react-router-hash-link'
 import { useState } from 'react'
 import logo from '../../assets/logo.png'
-import Resume from '../../assets/DivyanshuResumev2.pdf'
+import Resume from '../../assets/SumitResume.pdf'
 
 export function Header() {
   const [isActive, setActive] = useState(false)
@@ -16,27 +14,26 @@ export function Header() {
   }
   return (
     <Container className="header-fixed">
-      <Router>
-        <HashLink smooth to="#home" className="logo">
+        <a href="#home" className="logo" onClick={closeMenu}>
           <img src={logo} alt="Logo" />
-          <span>Divyanshu</span>
-          <span className="last-name"> Tiwari</span>
+          <span>Sumit</span>
+          <span className="last-name"> Singh</span>
           <span className="portfolio-text"> | Portfolio</span>
-        </HashLink>
+        </a>
 
         <nav className={isActive ? 'active' : ''}>
-          <NavHashLink smooth to="#home" onClick={closeMenu}>
+          <a href="#home" onClick={closeMenu}>
             Home
-          </NavHashLink>
-          <NavHashLink smooth to="#about" onClick={closeMenu}>
+          </a>
+          <a href="#about" onClick={closeMenu}>
             About me
-          </NavHashLink>
-          <NavHashLink smooth to="#project" onClick={closeMenu}>
+          </a>
+          <a href="#project" onClick={closeMenu}>
             Project
-          </NavHashLink>
-          <NavHashLink smooth to="#contact" onClick={closeMenu}>
+          </a>
+          <a href="#contact" onClick={closeMenu}>
             Contact
-          </NavHashLink>
+          </a>
           <a href={Resume} download className="button">
             CV
           </a>
@@ -62,7 +59,6 @@ export function Header() {
             }}
           ></div>
         </div>
-      </Router>
     </Container>
   )
 }

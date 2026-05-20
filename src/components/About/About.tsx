@@ -1,5 +1,5 @@
 import { Container } from "./styles";
-import DivyanshuImage from "../../assets/DivyanshuImage.webp";
+import Developer from "../../assets/developer.png";
 import python from "../../assets/python.svg"
 import java from "../../assets/java.svg"
 import htmlIcon from "../../assets/html-icon.svg";
@@ -28,31 +28,31 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
           <p>
-            Hi there! I'm Divyanshu, an enthusiastic Full Stack Developer skilled in building scalable web applications, managing deployments, and optimizing system stability.
+            Hi there! I'm Sumit, a Full Stack Developer focused on MERN stack, Next.js 15, TypeScript, and AI-driven product development.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
           <p>
-            I specialize in React, Node.js, and Express.js, with experience in deploying to cPanel environments and working with various AI tools and APIs.
+            I build production-grade platforms with JWT-based authentication, cloud-native media pipelines, payment gateway integration, and LLM-powered content generation.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.3 * 1000}>
           <p>
-            I am also a competitive programmer (Codeforces Specialist) and have experience in machine learning with Python and its libraries.
+            I am an INSPIRE Scholarship (SHE) recipient from the Government of India, awarded for ranking in the top 1% nationally.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={400}>
           <div className="education">
             <h3>Education:</h3>
             <h4>B.Tech in Computer Science & Information Technology</h4>
-            <p>MJP Rohilkhand University, Bareilly | Aug 2023 - May 2027</p>
-            <p>8.19 CGPA</p>
+            <p>Mahatma Jyotiba Phule Rohilkhand University, Bareilly | Aug 2023 - May 2027</p>
+            <p>B.Tech - Computer Science & Information Technology</p>
           </div>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={550}>
           <div className="experience">
-             <h3>Experience:</h3><h4>Full Stack Developer</h4>
-            <p>Codevirus Securities | May 2026 - Present</p>
+             <h3>Achievements:</h3><h4>INSPIRE Scholarship (SHE)</h4>
+            <p>Government of India | Top 1% national rank</p>
           </div>
         </ScrollAnimation>
 
@@ -154,7 +154,7 @@ export function About() {
       </div>
       <div className="about-image">
         <ScrollAnimation animateIn="fadeInRight" delay={0.21 * 1000}>
-          <img src={DivyanshuImage} alt="Divyanshu Tiwari" />
+          <img src={Developer} alt="Sumit Singh" />
         </ScrollAnimation>
       </div>
     </Container>

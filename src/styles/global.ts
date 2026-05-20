@@ -106,6 +106,19 @@ export const GlobalStyle = createGlobalStyle`
 
   html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+
+  @media (max-width: 960px){
+    html{
+      font-size: 58%;
+    }
+  }
+
+  @media (max-width: 600px){
+    html{
+      font-size: 55%;
+    }
   }
 
   body{

@@ -15,11 +15,15 @@ export const Container: any = styled.main`
     z-index: -1;
   }
 
+  @media (max-width: 960px){
+    padding: 0 6rem;
+  }
+
   @media (max-width: 740px){
     padding: 0 4rem;
   }
 
-  @media(max-width: 360px){
+  @media(max-width: 480px){
     padding: 0 2rem;
   }
 `

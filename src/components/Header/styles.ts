@@ -206,6 +206,12 @@ export const Container: any = styled.header`
       left: 0;
       transition: opacity 0.25s;
       background-color: var(--green);
+      gap: 2rem;
+
+      a{
+        font-size: 2rem;
+        padding: 1rem;
+      }
 
       a.button{
         background-color: var(--pink);
@@ -217,5 +223,34 @@ export const Container: any = styled.header`
       }
     }
   }
+
+  @media (max-width: 480px){
+    padding: 1.4rem 2rem;
+
+    .logo{
+      font-size: 2rem;
+
+      img{
+        width: 3.4rem;
+        height: 3.4rem;
+        margin-right: 0.6rem;
+      }
+    }
+
+    label{
+      width: 48px;
+      height: 26px;
+      right: 0;
+    }
+
+    label:after{
+      width: 18px;
+      height: 18px;
+      top: 4px;
+      left: 4px;
+    }
+  }
+    
   
 `
+

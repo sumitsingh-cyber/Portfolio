@@ -1,11 +1,9 @@
-import { BrowserRouter } from "react-router-dom"
 import { Container } from "./styles"
 import ScrollAnimationImport from "react-animate-on-scroll"
-import Illustration from "../../assets/illustration.svg"
-import { NavHashLink } from "react-router-hash-link"
 import linkedin from '../../assets/linkedin.svg'
 import githubIcon from '../../assets/github.svg'
 import Hello from '../../assets/Hello.gif'
+import sideImage from '../../assets/sideImage.png'
 
 const ScrollAnimation = ScrollAnimationImport as any
 export function Hero() {
@@ -16,29 +14,27 @@ export function Hero() {
           <p>Hello <img src={Hello} alt="Hello" width="20px"/>, I'm</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
-          <h1>Divyanshu Tiwari</h1>
+          <h1 className="textcolor">Sumit Singh</h1>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
-          <h3>Full Stack Developer & Software Engineer</h3>
+          <h3>Full Stack Developer</h3>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
-          <p className="small-resume">Building the future of the web with scalable backend systems and intuitive frontend experiences. I turn complex problems into elegant, high-performance digital solutions.</p>
+          <p className="small-resume">Full Stack Developer and B.Tech CS & IT undergraduate specializing in MERN stack, Next.js 15, TypeScript, and AI-driven product development.</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
-          <BrowserRouter>
-            <NavHashLink smooth to="#contact" className="button">Contact</NavHashLink>
-          </BrowserRouter>
+          <a href="#contact" className="button">Contact</a>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={1 * 1000}>
       <div className="social-media"><a
-        href="https://www.linkedin.com/in/divyanshu-tiwari1459/"
+        href="https://www.linkedin.com/in/sumit-singh-2285b228b/"
         target="_blank"
         rel="noreferrer"
       >
         <img src={linkedin} alt="Linkedin" />
       </a>
         <a
-          href="https://github.com/divyanshu-tiwari22"
+          href="https://github.com/sumitsingh-cyber"
           target="_blank"
           rel="noreferrer"
         >
@@ -47,9 +43,9 @@ export function Hero() {
       </div>
         </ScrollAnimation>
       </div>
-      <div className="hero-image">
+      <div className="hero-image ">
         <ScrollAnimation animateIn="fadeInRight" delay={1 * 1000}>
-          <img src={Illustration} alt="Ilustração" />
+          <img src={sideImage} alt="Portfolio visual" />
         </ScrollAnimation>
       </div>
     </Container>

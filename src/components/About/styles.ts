@@ -61,6 +61,7 @@ export const Container: any = styled.section`
   @media (max-width: 960px){
     display: block;
     text-align: center;
+    margin-top: 10rem;
     
     .hard-skills{
       justify-content: center;
@@ -82,6 +83,21 @@ export const Container: any = styled.section`
   }
 
   @media only screen and (max-width: 480px) {
+    margin-top: 8rem;
+
+    h2{
+      font-size: 2.8rem;
+    }
+
+    p{
+      font-size: 1.6rem;
+      letter-spacing: 0.04rem;
+    }
+
+    .hard-skills{
+      gap: 1.4rem;
+    }
+
     .about-image {
       max-width: 100%;
       margin-top: 4rem;
@@ -96,4 +112,51 @@ export const Container: any = styled.section`
       }
     }
   }
+    /* ABOUT IMAGE */
+
+.about-image {
+  display: inline-block;
+  overflow: hidden;
+
+  /* Only corner curl */
+  border-radius: 40px 0px 40px 0px;
+}
+
+/* IMAGE */
+
+.about-image img {
+  width: 380px;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+
+  /* Same corner curl */
+  border-radius: 40px 0px 40px 0px;
+
+  transition: transform 0.5s ease;
+}
+
+/* HOVER */
+
+.about-image:hover img {
+  transform: scale(1.03);
+}
+
+/* TABLET */
+
+@media (max-width: 992px) {
+  .about-image img {
+    width: 300px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+  .about-image img {
+    width: 230px;
+
+    border-radius: 25px 0px 25px 0px;
+  }
+}
 `

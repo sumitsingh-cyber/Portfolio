@@ -1,13 +1,15 @@
 import { Container, ContainerSucces } from './styles'
-import { useForm, ValidationError } from '@formspree/react'
 import { toast, ToastContainer } from 'react-toastify'
-import { useEffect, useState } from 'react'
+import { FormEvent, useState } from 'react'
 import validator from 'validator'
 
 export function Form() {
-  const [state, handleSubmit] = useForm('xknkpqry')
   const [validEmail, setValidEmail] = useState(false)
+  const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const [succeeded, setSucceeded] = useState(false)
+  const contactEmail = 'sumitsinghpatel2027@gmail.com'
+
   function verifyEmail(email: string) {
     if (validator.isEmail(email)) {
       setValidEmail(true)
@@ -15,18 +17,29 @@ export function Form() {
       setValidEmail(false)
     }
   }
-  useEffect(() => {
-    if (state.succeeded) {
-      toast.success('Email successfully sent!', {
-        position: toast.POSITION.BOTTOM_LEFT,
-        pauseOnFocusLoss: false,
-        closeOnClick: true,
-        hideProgressBar: false,
-        toastId: 'succeeded',
-      })
+
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+
+    if (!validEmail || !message) {
+      return
     }
-  })
-  if (state.succeeded) {
+
+    const subject = encodeURIComponent('Portfolio contact request')
+    const body = encodeURIComponent(`From: ${email}\n\n${message}`)
+    window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`
+    setSucceeded(true)
+
+    toast.success('Email box opened successfully!', {
+      position: toast.POSITION.BOTTOM_LEFT,
+      pauseOnFocusLoss: false,
+      closeOnClick: true,
+      hideProgressBar: false,
+      toastId: 'succeeded',
+    })
+  }
+
+  if (succeeded) {
     return (
       <ContainerSucces>
         <h3>Thanks for getting in touch!</h3>
@@ -51,11 +64,11 @@ export function Form() {
           type="email"
           name="email"
           onChange={(e) => {
+            setEmail(e.target.value)
             verifyEmail(e.target.value)
           }}
           required
         />
-        <ValidationError prefix="Email" field="email" errors={state.errors} />
         <textarea
           required
           placeholder="Send a message to get started."
@@ -65,14 +78,9 @@ export function Form() {
             setMessage(e.target.value)
           }}
         />
-        <ValidationError
-          prefix="Message"
-          field="message"
-          errors={state.errors}
-        />
         <button
           type="submit"
-          disabled={state.submitting || !validEmail || !message}
+          disabled={!validEmail || !message}
         >
           Submit
         </button>

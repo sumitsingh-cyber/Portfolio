@@ -70,11 +70,29 @@ export const Container: any = styled.footer`
   }
   @media(max-width: 600px){
     padding: 4rem 2rem;
+
+    .logo{
+      font-size: 2.4rem;
+    }
+
     p{
       font-size: 1.4rem;
+      justify-content: center;
+      text-align: center;
     }
+
     .copyright p{
       font-size: 1.4rem;
     }
+
+    .social-media{
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+
+  @media(max-width: 380px){
+    padding: 3rem 1.5rem;
   }
 `

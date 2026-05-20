@@ -58,7 +58,29 @@ export const Container: any = styled.section`
       flex-direction: column;
       div{
         width: 100%;
+        max-width: 32rem;
         
+      }
+    }
+  }
+
+  @media(max-width: 480px){
+    margin-top: 8rem;
+
+    header{
+      h2{
+        font-size: 3.2rem;
+      }
+    }
+
+    .contacts{
+      div{
+        max-width: 100%;
+        padding: 1rem 1.5rem;
+
+        a{
+          font-size: 1.6rem;
+        }
       }
     }
   }
