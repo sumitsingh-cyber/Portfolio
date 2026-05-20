@@ -1,283 +1,90 @@
-# 🎨 Personal Portfolio
+# Sumit Singh Portfolio
 
-A modern, responsive personal portfolio website built with React, TypeScript, and Styled Components. Showcase your projects, skills, and experience with an interactive and visually appealing interface[...]
+A modern personal portfolio for Sumit Singh, a Full Stack Developer focused on the MERN stack, Next.js, TypeScript, and AI-powered product development.
 
-**Live Demo:** [https://divyanshu-tiwari.vercel.app](https://divyanshu-tiwari.vercel.app)
+The site presents a responsive developer profile with animated sections, featured projects, skills, contact options, resume download, dark/light mode, and a custom theme color switcher.
 
----
+## Live Projects Featured
 
-## ✨ Features
+- **Rverse AI** - AI-powered learning platform that generates course modules, lesson notes, flashcards, MCQs, and video resources from a topic prompt.
+- **SkillBridge** - Full-stack ed-tech marketplace with role-based dashboards, secure authentication, payments, media delivery, and course management.
 
-- 🎯 **Responsive Design** - Works seamlessly on desktop, tablet, and mobile devices
-- ⚡ **Fast Performance** - Optimized with Vercel Analytics and modern React practices
-- 🎭 **Smooth Animations** - Beautiful scroll animations powered by `react-animate-on-scroll`
-- 🔐 **Contact Form** - Secure form handling with Google reCAPTCHA and Formspree integration
-- 🎨 **Styled Components** - CSS-in-JS for component-scoped styling
-- 📱 **Particle Effects** - Engaging visual effects with `react-tsparticles`
-- ✅ **Type Safe** - Full TypeScript support for better code quality
-- 🧪 **Well Tested** - Includes testing setup with React Testing Library
+## Tech Stack
 
----
+- React 17
+- TypeScript
+- Styled Components
+- React Scripts
+- React Animate On Scroll
+- React Toastify
+- tsparticles
 
-## 🛠️ Tech Stack
+## Features
 
-| Technology | Purpose |
-|-----------|---------|
-| **React** | UI library |
-| **TypeScript** | Type safety |
-| **Styled Components** | CSS-in-JS styling |
-| **React Router** | Client-side routing |
-| **Formspree** | Form backend |
-| **Google reCAPTCHA** | Spam protection |
-| **Vercel Analytics** | Performance monitoring |
-| **React Particles** | Animated backgrounds |
+- Responsive portfolio layout
+- Animated hero, about, project, and contact sections
+- Dark/light theme toggle
+- Persistent accent color switcher
+- Downloadable resume
+- Contact form and direct email/phone links
+- Social profile links
+- Project showcase with live links and technology tags
 
----
+## Getting Started
 
-## 📋 Prerequisites
+### Prerequisites
 
-Before you begin, ensure you have the following installed:
+Install Node.js and npm on your system.
 
-- **Node.js** (v14 or higher)
-- **yarn** (v1.22 or higher)
-- **Git**
-
-Check your versions:
-```bash
-node --version
-yarn --version
-git --version
-```
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the Repository
+### Installation
 
 ```bash
-git clone https://github.com/divyanshu-tiwari22/Portfolio.git
-cd Portfolio
+npm install
 ```
 
-### 2. Install Dependencies
+### Run Locally
 
 ```bash
-yarn install
+npm start
 ```
 
-### 3. Environment Configuration
+The app runs at:
 
-Create a `.env` file in the root directory (optional, for API keys):
-
-```env
-# Google reCAPTCHA
-REACT_APP_RECAPTCHA_KEY=your_recaptcha_key_here
-
-# Formspree (configured in code)
-# https://formspree.io/
+```text
+http://localhost:3000
 ```
 
----
-
-## 🏃 Running the Project
-
-### Development Mode
-
-Start the development server:
+### Build for Production
 
 ```bash
-yarn start
+npm run build
 ```
 
-The application will open at `http://localhost:3000` and automatically reload when you make changes.
+## Project Structure
 
-### Production Build
-
-Create an optimized production build:
-
-```bash
-yarn build
+```text
+src/
+  assets/              Static images, icons, and resume
+  components/
+    About/             About, education, achievements, and skills section
+    ColorSwitcher/     Accent color selector
+    Contact/           Contact section
+    Footer/            Footer layout
+    Form/              Contact form
+    Header/            Navigation, resume link, and theme toggle
+    Hero/              Main landing section
+    Loader/            Initial loading screen
+    Main/              Page section composition
+    Project/           Featured projects
+  styles/              Global styles
 ```
 
-The build folder contains the optimized production-ready files.
+## Contact
 
-### Testing
+- Email: [sumitsinghpatel2027@gmail.com](mailto:sumitsinghpatel2027@gmail.com)
+- GitHub: [sumitsingh-cyber](https://github.com/sumitsingh-cyber)
+- LinkedIn: [Sumit Singh](https://www.linkedin.com/in/sumit-singh-2285b228b/)
 
-Run the test suite:
+## License
 
-```bash
-yarn test
-```
-
-Press `a` to run all tests, or follow the interactive prompts.
-
----
-
-## 📁 Project Structure
-
-```
-Portfolio/
-├── public/
-│   ├── index.html
-│   └── favicon.ico
-├── src/
-│   ├── components/        # Reusable React components
-│   ├── pages/             # Page components
-│   ├── styles/            # Global and styled components
-│   ├── App.tsx            # Main App component
-│   ├── App.css            # Global styles
-│   └── index.tsx          # React entry point
-├── package.json           # Project dependencies
-├── tsconfig.json          # TypeScript configuration
-└── README.md              # This file
-```
-
----
-
-## 🔧 Available Scripts
-
-| Command | Description |
-|---------|-------------|
-| `yarn start` | Run development server |
-| `yarn build` | Build for production |
-| `yarn test` | Run test suite |
-
----
-
-## 🌐 Deployment
-
-### Deploy to Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Connect your repository to [Vercel](https://vercel.com)
-3. Vercel will automatically detect it's a React app and deploy it
-
-```bash
-# Or use Vercel CLI
-yarn global add vercel
-vercel
-```
-
-### Deploy to Other Platforms
-
-The `build` folder contains static files that can be deployed to any static hosting service:
-- **GitHub Pages**
-- **Netlify**
-- **AWS S3 + CloudFront**
-- **Firebase Hosting**
-- **Heroku**
-
----
-
-## 📝 Customization
-
-### Update Personal Information
-
-Edit the relevant component files in `src/` to add:
-- Your name and bio
-- Project descriptions
-- Skills and experience
-- Social media links
-- Contact information
-
-### Styling
-
-Modify styled components in `src/styles/` to customize:
-- Color scheme
-- Typography
-- Animations
-- Responsive breakpoints
-
-### Add Google reCAPTCHA
-
-1. Get keys from [Google reCAPTCHA](https://www.google.com/recaptcha/admin)
-2. Add public key to `.env` file
-3. Integrate in your contact form component
-
----
-
-## 🧪 Testing
-
-The project includes testing setup with:
-- **React Testing Library** - Component testing
-- **Jest** - Test runner
-- **DOM Testing** - For DOM queries and assertions
-
-Run tests in watch mode:
-```bash
-yarn test --watch
-```
-
-Generate coverage report:
-```bash
-yarn test --coverage
-```
-
----
-
-## 📦 Dependencies
-
-### Core Dependencies
-- **react**: ^17.0.2 - UI framework
-- **react-dom**: ^17.0.2 - React rendering
-- **typescript**: ^4.4.2 - Type safety
-- **react-scripts**: ^5.0.1 - Build tooling
-
-### UI & Styling
-- **styled-components**: ^5.3.3 - CSS-in-JS
-- **react-animate-on-scroll**: ^2.1.5 - Scroll animations
-- **react-tsparticles**: ^1.37.5 - Particle effects
-- **classnames**: ^2.5.1 - Class name management
-
-### Forms & Validation
-- **@formspree/react**: ^2.2.4 - Form backend
-- **react-google-recaptcha**: ^2.1.0 - Spam protection
-- **validator**: ^13.7.0 - Input validation
-
-### Routing & Navigation
-- **react-router-dom**: ^6.2.1 - Client routing
-- **react-router-hash-link**: ^2.4.3 - Hash navigation
-
-### Notifications & Analytics
-- **react-toastify**: ^8.1.0 - Toast notifications
-- **@vercel/analytics**: ^1.4.1 - Performance analytics
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! To contribute:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📧 Contact
-
-**Author:** Divyanshu Tiwari  
-**GitHub:** [@divyanshu-tiwari22](https://github.com/divyanshu-tiwari22)  
-**Portfolio:** [https://divyanshu-tiwari.vercel.app](https://divyanshu-tiwari.vercel.app)
-
----
-
-## 🙏 Acknowledgments
-
-- [React Documentation](https://react.dev)
-- [Vercel](https://vercel.com) for hosting
-- [Formspree](https://formspree.io) for form backend
-- All the amazing open-source libraries used in this project
-
----
-
-<div align="center">
-
-**Made with ❤️ by Divyanshu Tiwari**
-
-⭐ If you found this useful, please consider starring the repository!
-
-</div>
+This project is maintained as a personal portfolio.
