@@ -1,42 +1,84 @@
 # Sumit Singh Portfolio
 
-A modern personal portfolio for Sumit Singh, a Full Stack Developer focused on the MERN stack, Next.js, TypeScript, and AI-powered product development.
+Personal portfolio website for **Sumit Singh**, a Full Stack Developer focused on MERN stack development, Next.js, TypeScript, and AI-powered product experiences.
 
-The site presents a responsive developer profile with animated sections, featured projects, skills, contact options, resume download, dark/light mode, and a custom theme color switcher.
+**Live Demo:** [portfolio-nine-ashy-94.vercel.app](https://portfolio-nine-ashy-94.vercel.app/)
 
-## Live Projects Featured
+## Overview
 
-- **Rverse AI** - AI-powered learning platform that generates course modules, lesson notes, flashcards, MCQs, and video resources from a topic prompt.
-- **SkillBridge** - Full-stack ed-tech marketplace with role-based dashboards, secure authentication, payments, media delivery, and course management.
+This portfolio is built as a polished, responsive single-page web experience. It introduces Sumit's profile, technical skills, education, achievements, featured projects, resume, and contact options through an animated React interface.
+
+The site is designed to work smoothly across desktop and mobile screens, with theme controls, custom accent colors, scroll animations, and a clean project showcase for production-ready work.
+
+## Highlights
+
+- Responsive single-page portfolio layout
+- Animated hero, about, project, and contact sections
+- Dark/light mode toggle
+- Persistent custom accent color switcher
+- Downloadable resume
+- Featured project cards with live links and tech stacks
+- Contact form with direct email and phone actions
+- Social links for GitHub and LinkedIn
+- Production deployment on Vercel
+
+## Featured Projects
+
+### Rverse AI
+
+An AI-powered learning platform that generates complete courses from a topic prompt, including structured modules, lesson notes, flashcards, MCQs, and educational video resources.
+
+**Tech:** Next.js 15, TypeScript, Gemini API, PostgreSQL, Drizzle ORM, Vercel
+
+**Live:** [rverse-ai-course-generator.vercel.app](https://rverse-ai-course-generator.vercel.app)
+
+### SkillBridge
+
+A full-stack ed-tech marketplace for coding courses with instructor and student experiences, secure authentication, enrollment flows, payments, and cloud media delivery.
+
+**Tech:** React, Node.js, Express, MongoDB, Razorpay, Cloudinary, JWT
+
+**Live:** [skill-bridge-ruddy-beta.vercel.app](https://skill-bridge-ruddy-beta.vercel.app)
 
 ## Tech Stack
 
-- React 17
-- TypeScript
-- Styled Components
-- React Scripts
-- React Animate On Scroll
-- React Toastify
-- tsparticles
+| Area | Technology |
+| --- | --- |
+| Frontend | React 17, TypeScript |
+| Styling | Styled Components |
+| Animation | React Animate On Scroll |
+| UI Feedback | React Toastify |
+| Visual Effects | React tsparticles |
+| Build Tooling | React Scripts |
+| Deployment | Vercel |
 
-## Features
+## Project Structure
 
-- Responsive portfolio layout
-- Animated hero, about, project, and contact sections
-- Dark/light theme toggle
-- Persistent accent color switcher
-- Downloadable resume
-- Contact form and direct email/phone links
-- Social profile links
-- Project showcase with live links and technology tags
+```text
+src/
+  assets/              Images, icons, resume, and static media
+  components/
+    About/             Bio, education, achievements, and skills
+    ColorSwitcher/     Persistent accent color selector
+    Contact/           Contact section layout
+    Footer/            Footer component
+    Form/              Contact form
+    Header/            Navigation, resume link, and theme toggle
+    Hero/              Main introduction section
+    Loader/            Initial loading screen
+    Main/              Page section composition
+    Project/           Featured project showcase
+  styles/              Global styles
+```
 
 ## Getting Started
 
 ### Prerequisites
 
-Install Node.js and npm on your system.
+- Node.js
+- npm
 
-### Installation
+### Install Dependencies
 
 ```bash
 npm install
@@ -48,36 +90,25 @@ npm install
 npm start
 ```
 
-The app runs at:
+Open the app at:
 
 ```text
 http://localhost:3000
 ```
 
-### Build for Production
+### Create Production Build
 
 ```bash
 npm run build
 ```
 
-## Project Structure
+## Deployment
 
-```text
-src/
-  assets/              Static images, icons, and resume
-  components/
-    About/             About, education, achievements, and skills section
-    ColorSwitcher/     Accent color selector
-    Contact/           Contact section
-    Footer/            Footer layout
-    Form/              Contact form
-    Header/            Navigation, resume link, and theme toggle
-    Hero/              Main landing section
-    Loader/            Initial loading screen
-    Main/              Page section composition
-    Project/           Featured projects
-  styles/              Global styles
-```
+The portfolio is deployed on Vercel:
+
+[https://portfolio-nine-ashy-94.vercel.app/](https://portfolio-nine-ashy-94.vercel.app/)
+
+For future deployments, connect this GitHub repository to Vercel and deploy from the `main` branch.
 
 ## Contact
 
@@ -87,4 +118,4 @@ src/
 
 ## License
 
-This project is maintained as a personal portfolio.
+This repository is maintained as a personal portfolio project.
